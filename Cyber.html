@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    
+  </head>
+<body style="margin: 0;">
+    <h1 id="title" style="text-align: center; font-size: 2.5em; color: #FFFFFF; margin-top: 0; padding: 30px; width: 100%; background-color: #007BFF; margin: 0;">
+        CyberSecurity Survey Form
+    </h1>
+</body>
+
+  <!-- Description Section -->
+    <p id="description">example
+    </p>
+
+  <strong>
+  <details>
+    <summary>Details</summary>
+
+  <aside p id="description">This survey aims to gather insights into your cybersecurity practices and concerns. Your responses will help us understand the current state of cybersecurity.</p>
+
+  </aside>
+  </details>
+  <hr />
+
+  <!-- Collapsible details section -->
+    <details>
+      <summary>Why</summary>
+
+      <aside p id="description">Cybersecurity is a growing concern in today's digital world. This survey is designed to collect data on common practices.</p>
+
+    </details>
+    <hr />
+
+    </aside>
+    <!-- Another collapsible section -->
+    <details>
+      <summary>How</summary>
+      
+      <aside p id="description">Your responses will be anonymized and aggregated for analysis purposes only. The findings will be used to improve cybersecurity.</p>
+
+    </details>
+    <hr />
+  <!-- Example wold have to use language excpet html,
+  <!-- CSRF Token for protection (IGNORE) -->
+      <input type="hidden" name="csrf-token" value="GENERATED_CSRF_TOKEN_HERE">
+
+  
+  <form id="survey-form" method="POST" action="/submit">
+  <table>
+        <tr>
+          <td><label
+           for="name">
+           <strong>Enter your Field:</label>
+           </td>
+
+          <td><input
+           type="text"
+            id="name"
+             name="name"
+              required maxlength="16"
+               pattern="[A-Za-z\s]+"
+                placeholder="Cyber Security">
+                </td>
+        </tr>
+        <tr>
+          <td><label
+           for="email">
+           <strong>Enter future Carrer:</label>
+           </td>
+
+          <td><input
+           type="Career"
+            id="Carrer"
+             name="Career"
+              required maxlength="16"
+               pattern="[A-Za-z\s]+"
+                placeholder="Red Teamer">
+                </td>
+        </tr>
+
+        <tr>
+          <td>
+          <label
+         for="number"
+          id="number-label">
+         <strong>Experience:</strong><label>
+           </td>
+           
+           <td>
+        <input
+           id="number"
+            name="number"
+             pattern="^[1-9][0-9]?$" 
+             min="1"
+              max="99"
+               required
+               placeholder="0"
+               size="2"
+               oninput="if(this.value.length > 2) this.value = this.value.slice(0,2);">
+        </td>
+      </tr>
+
+          <td></td>
+          <!-- Dropdown Menu -->
+        <tr>
+          <td><label for="dropdown"><strong>Choose your role:</strong></label></td>
+          <td>
+            <select id="dropdown" name="role">
+              <option value="" disabled selected>Select an option</option>
+              <option value="red-teamer">Red Teamer</option>
+              <option value="blue-teamer">Blue Teamer</option>
+              <option value="blue-teamer">Blue Teamer</option>
+              <option value="blue-teamer">Blue Teamer</option>
+              <option value="blue-teamer">Blue Teamer</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Radio Buttons -->
+        
+
+          </td>
+        </tr>
+        <!-- Questionnaire Section -->
+        <h2 style="text-align: center; background-color: #f0f0f0; padding: 10px; margin: 0;">Questionnaire</h2>
+
+          <hr />
+        <section style="margin-top: 20px;">
+          <!-- Question 1 -->
+          <fieldset>
+            <legend><strong>Do you regularly update your software?</strong></legend>
+            <label><input type="radio" name="update-software" value="definitely" required> Definitely</label><br />
+            <label><input type="radio" name="update-software" value="maybe"> Maybe</label><br />
+            <label><input type="radio" name="update-software" value="not-sure"> Not sure</label>
+          </fieldset>
+
+          <!-- Question 2 -->
+          <fieldset>
+            <legend><strong>Do you use strong passwords?</strong></legend>
+            <label><input type="radio" name="strong-passwords" value="definitely" required> Definitely</label><br />
+            <label><input type="radio" name="strong-passwords" value="maybe"> Maybe</label><br />
+            <label><input type="radio" name="strong-passwords" value="not-sure"> Not sure</label>
+          </fieldset>
+
+          <!-- Question 3 -->
+          <fieldset>
+            <legend><strong>Do you use two-factor authentication (2FA)?</strong></legend>
+            <label><input type="radio" name="use-2fa" value="definitely" required> Definitely</label><br />
+            <label><input type="radio" name="use-2fa" value="maybe"> Maybe</label><br />
+            <label><input type="radio" name="use-2fa" value="not-sure"> Not sure</label>
+          </fieldset>
+
+        <!-- Checkboxes -->
+    <title>Skills Section</title>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td><strong>Skills:</strong></td>
+            <td>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="skill-network-security" name="skills[]" value="network-security">
+                            <label for="skill-network-security" style="text-align: center; display: inline-block; width: 150px;">Network Sec</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-penetration-testing" name="skills[]" value="penetration-testing">
+                            <label for="skill-penetration-testing" style="text-align: center; display: inline-block; width: 150px;">Pen Test</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-incident-response" name="skills[]" value="incident-response">
+                            <label for="skill-incident-response" style="text-align: center; display: inline-block; width: 150px;">Incident Resp</label>
+                        </td>
+                    </tr>
+                         <tr>
+                        <td>
+                            <input type="checkbox" id="skill-programming" name="skills[]" value="programming">
+                            <label for="skill-programming" style="text-align: center; display: inline-block; width: 150px;">Programing</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-encryption" name="skills[]" value="encryption">
+                            <label for="skill-encryption" style="text-align: center; display: inline-block; width: 150px;">Encryption</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-ethicalhacking" name="skills[]" value="ethicalhacking">
+                            <label for="skill-ethicalhacking" style="text-align: center; display: inline-block; width: 150px;">Ethical Hacking</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="skill-os" name="skills[]" value="os">
+                            <label for="skill-os" style="text-align: center; display: inline-block; width: 150px;">OS</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-malware" name="skills[]" value="malware">
+                            <label for="skill-malware" style="text-align: center; display: inline-block; width: 150px;">Malware</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="skill-cloud" name="skills[]" value="cloud">
+                            <label for="skill-cloud" style="text-align: center; display: inline-block; width: 150px;">Cloud Security</label>
+                        </td>
+                    </tr>
+                       <tr>
+                        <td>
+                            <input type="checkbox" id="skill-security" name="skills[]" value="security">
+                            <label for="skill-security" style="text-align: center; display: inline-block; width: 150px;">Security</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" id="riskmanagement" name="riskmanagement" value="riskmanagement"><label style="text-align: center; display: inline-block; width: 150px;">Risk</label>
+                        </td>
+                          <td>
+                            <input type="checkbox" id="devop" name="skills[]" value="devop">
+                            <label for="devop" style="text-align: center; display: inline-block; width: 150px;">Dev Op</label>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+        <!-- Textarea -->
+        <tr>
+  <td><label for="comments"><strong>Additional Comments:</strong></label></td>
+  <td>
+    <textarea id="comments" name="comments" rows="4" style="width: 100%; box-sizing: border-box;"></textarea>
+  </td>
+</tr>
+
+        <!-- Submit Button -->
+        <!-- Added a submit button with the required ID and type attributes -->
+        <tr>
+          <td></td>
+          <td><button type="submit" id="submit">Submit</button></td>
+        </tr>
+
+      </table>
+    </form>
+    <footer style="text-align: center; padding: 20px; background-color: #f0f0f0; font-size: 1.2em; font-weight: bold; color: #333;">
+  &copy; 2025 CyberSecurity Survey Form
+</footer>
+
+
+  </body>
+</html>
