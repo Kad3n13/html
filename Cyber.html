@@ -54,6 +54,7 @@
           </td>
           <td>
             <input type="text" id="name" name="name" required maxlength="16" pattern="[A-Za-z\s]+" placeholder="Cyber Security">
+            <hr >
           </td>
         </tr>
         <tr>
@@ -64,6 +65,7 @@
           </td>
           <td>
             <input type="text" id="Career" name="Career" required maxlength="16" pattern="[A-Za-z\s]+" placeholder="Red Teamer">
+            <hr >
           </td>
         </tr>
         
@@ -79,6 +81,7 @@
                             oninput="this.value = Math.max(1, Math.min(99, this.value)).toString().slice(0, 2)"
                             inputmode="numeric" title="Only numbers between 1 and 99 are allowed."
                             style="width: 50px; text-align: center;">
+                          
                     </td>
                 </tr>
 
@@ -92,11 +95,13 @@
               <option value="pen-tester">Pen Tester</option>
               <option value="cyber-analyst">Cyber Analyst</option>
               <option value="bug-hunter">Bug Hunter</option>
+              <option value="blue teamer">Blue Teamer</option>
+              <option value="red-teamer">Red Teamer</option>
             </select>
           </td>
         </tr>
       </table>
-
+<hr >
       <section id="questionnaire">
         <h2 style="text-align: center; background-color: #f0f0f0; padding: 10px; margin: 0;">Questionnaire</h2>
         <hr />
@@ -121,7 +126,7 @@
           <label><input type="radio" name="use-2fa" value="not-sure"> Not sure</label>
         </fieldset>
       </section>
-
+    <hr >
       <section id="skills">
         <table style="width: 100%;">
           <tr>
@@ -189,7 +194,7 @@
                   </td>
                   <td>
                     <input type="checkbox" id="devop" name="skills[]" value="devop">
-                    <label for="devop" style="text-align: center; display: inline-block; width: 150px;">Dev Op</label>
+                    <label for="devops" style="text-align: center; display: inline-block; width: 150px;">Dev Ops</label>
                   </td>
                 </tr>
               </table>
@@ -197,27 +202,26 @@
           </tr>
         </table>
       </section>
-
+    <hr >
       <section id="comments">
         <table>
           <tr>
-            <td>
-              <label for="comments"><strong>Additional Comments:</strong></label>
-            </td>
-            <td>
-              <textarea id="comments" name="comments" rows="4" style="width: 100%; box-sizing: border-box;"></textarea>
-            </td>
-          </tr>
+  <td><label for="comments"><strong>Additional Comments:</strong></label></td>
+  <td>
+    <textarea id="comments" name="comments" rows="4" style="width: 100%; box-sizing: border-box;"></textarea>
+  </td>
+</tr>
         </table>
       </section>
 
       <button type="submit" id="submit">Submit</button>
     </form>
   </main>
-
+<hr >
   <footer style="text-align: center; padding: 20px; background-color: #f0f0f0; font-size: 1.2em; font-weight: bold; color: #333;">
     &copy; 2025 CyberSecurity Survey Form
   </footer>
+  <hr >
 </body>
 
 </html>
